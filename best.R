@@ -16,7 +16,6 @@ best <- function(state, outcome)
     if (is.na(column))
         stop("invalid outcome")
     all_outcomes <- read.csv("outcome-of-care-measures.csv",stringsAsFactors=FALSE)
-    #all_outcomes <- read.csv("temp.csv",stringsAsFactors=FALSE)
     
     state_outcomes<-all_outcomes[all_outcomes$State==state,]
     if (nrow(state_outcomes)==0)
