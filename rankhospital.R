@@ -36,7 +36,7 @@ rankhospital <- function(state, outcome, num = "best")
     else if (num=="worst")
         nrow(ordered_state_outcomes)
     else
-        stop("invalid identifier")
+        stop("invalid index")
     
     ordered_state_outcomes[index,"Hospital.Name"]
 }
